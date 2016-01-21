@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Ejercicio 7 - Conversores</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background-color: #7d7dfd;
+      }
+
+      table {
+        text-align: center;
+        background-color: #c9c9c9;
+        margin: auto;
+        margin-top: 35px;
+        height: 350px;
+        width: 35%;
+      }
+      table, tr, td{
+        border: solid black 2px;
+        border-collapse: collapse;
+      }
+      td.izquierda {
+        text-align: left;
+      }
+      
+    </style>
+  </head>
+  
+  <body>
+    <form method="post" action="Ejer7.jsp">
+
+      <table>
+        <tr>
+          <td colspan="2">Conversores</td>
+        </tr>
+        <tr style="height: 10%">
+          <td style="text-align: right;">
+            <label>Modo:</label>
+          </td>
+          <td class="izquierda">      
+            <input type="radio" name="opcion" value="euros" checked>      
+            <label>Euros</label> 
+            <br/>
+             <input type="radio" name="opcion" value="pesetas">  
+            <label>Pesetas</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="cantidad">Cantidad:</label>            
+            <input type="number" name="cantidad" style="width: 150px;" value="1" step="0.01">
+          </td>
+        <tr>
+          <td colspan="2">
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Convertir">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
